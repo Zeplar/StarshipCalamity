@@ -3,6 +3,9 @@ package com.Calamity.Component;
 import com.Calamity.Hardware.Console_Left;
 import com.Calamity.Spaceship;
 
+/**
+ * The Warp Core draws power and allows player to instantly change ship position, with some restrictions.
+ */
 public class Warp_Core implements Component {
 
     static final double maxPowerDrain = 0.5;    //consumes half the ship's power at max power
@@ -40,6 +43,9 @@ public class Warp_Core implements Component {
         }
     }
 
+    /**
+     * Logic for changing ship position.
+     */
     private void warp()
     {
 

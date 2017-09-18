@@ -2,6 +2,9 @@ package com.Calamity.Hardware;
 
 import javax.sql.rowset.serial.SerialException;
 
+/**
+ * Main control part of the console, with the Warp Drive, Sensor Array, and Weapons Module.
+ */
 public class Console_Left implements Prop {
 
     public byte greenBar, redBar;

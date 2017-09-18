@@ -4,6 +4,9 @@ import com.Calamity.Color;
 
 import javax.sql.rowset.serial.SerialException;
 
+/**
+ * The Console Right controls the magnetic shield; but it's primarily an information display for the players.
+ */
 public class Console_Right implements Prop {
 
     public boolean[] switches;

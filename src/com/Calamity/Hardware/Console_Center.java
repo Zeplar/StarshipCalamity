@@ -2,6 +2,9 @@ package com.Calamity.Hardware;
 
 import javax.sql.rowset.serial.SerialException;
 
+/**
+ * The Console Center has a 5x5 array of LED buttons.
+ */
 public class Console_Center implements Prop {
 
     boolean lightStates[];

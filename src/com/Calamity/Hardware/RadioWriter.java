@@ -7,10 +7,12 @@ import gnu.io.CommPortIdentifier;
 import gnu.io.SerialPort;
 
 import javax.sql.rowset.serial.SerialException;
-import java.sql.Time;
 import java.util.Enumeration;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * The main communication class. Writes 32-byte packets over serial to an Arduino, which relays them to the ship.
+ */
 public class RadioWriter {
     SerialPort serialPort;
     boolean test;

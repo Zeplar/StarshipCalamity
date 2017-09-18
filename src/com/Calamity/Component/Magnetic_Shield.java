@@ -4,6 +4,9 @@ import com.Calamity.Hardware.Console_Right;
 import com.Calamity.Spaceship;
 import com.Calamity.Color;
 
+/**
+ * The Magnetic Shield primarily draws power and interacts with UFO Collisions.
+ */
 public class Magnetic_Shield implements Component {
 
     enum DIRECTION {N, NE, E, SE, S, SW, W, NW};

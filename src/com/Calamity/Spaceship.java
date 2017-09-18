@@ -9,16 +9,16 @@ import com.Calamity.Component.Component;
 import java.util.List;
 
 public class Spaceship {
-    private double fuel;
-    private double energy;
+    private double fuel;    //Fuel is generated continuously from elements in the Reactor component
+    private double energy;  //Energy is generated continuously (may be moved to a component for puzzle opportunities)
     public Position position;
-    private int dX, dY;
+    private int dX, dY;     //Ship speed
     private double angleDegree;
-    private double dAngle;
+    private double dAngle;  //Angular momentum
 
     private RadioWriter radio;
 
-    private int deltaMicros;
+    private int deltaMicros;    //Microseconds since last update
 
     private List<Component> components;
 
@@ -26,7 +26,7 @@ public class Spaceship {
 
     enum Rocket {
         leftRear, rightRear, leftTurn, rightTurn, hyper1, hyper2
-    };
+    };  //!!!Should be moved to an Engine component
 
     public Spaceship()
     {

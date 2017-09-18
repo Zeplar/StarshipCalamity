@@ -8,6 +8,11 @@ public class Intercepting_Bogey extends UFO {
 
     private int dx,dy;
 
+    /**
+     * Moves in a straight line toward the ship; adjusts for ship momentum
+     * @param position
+     * @param speed
+     */
     public Intercepting_Bogey(Position position, int speed)
     {
         super(position, 3, Color.COLOR.Red);
